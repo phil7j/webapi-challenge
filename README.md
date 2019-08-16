@@ -38,15 +38,28 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] Mention two parts of Express that you learned about this week.
 
-- [ ] What is Express Middleware?
+- [ ]  Mention two parts of Express that you learned about this week.
 
-- [ ] How can a client send data to an API?
+    One thing we learned about was basic routing. How to setup a POST/GET/PUT/DELETE route, how to send a status and json. Another thing we learned about was deploying an app to heroku and how heroku needs a few certain things setup in your app before it can be successfully hosted.
 
-- [ ] What can the API return to help clients know if a request was successful?
+- [ ]  What is Express Middleware?
 
-- [ ] What Express feature can we use to partition an application into sub-applications?
+    Middleware is basically just a function that is called before your route is resolved. It can essentially be any sort of logic. Some middleware is authentication, some is logging important data, or manipulating data.
+
+- [ ]  How can a client send data to an API?
+
+    In POST and PUT requests, a client can attach a body, or headers to the request. The headers and body are essentially objects with data that the client wants to communicate to the API with.
+
+- [ ]  What can the API return to help clients know if a request was successful?
+
+    We can send status codes to help clients know if their status was successful. These give the client a message letting them know if it was successful or not. If not successful the status code can communicate what exactly went wrong with the submission.
+
+- [ ]  How can we partition our application into sub-applications?
+
+    We can use express router to partition out app into a more organized and readable app.  With express router we can separate the routes to different pages into different files. We could also put our middleware in a separate file. If referenced correctly, express router will be able to know where all the needed functions and routes are.
+
+
 
 ## Minimum Viable Product
 
